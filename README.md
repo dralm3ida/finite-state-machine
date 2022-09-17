@@ -19,6 +19,12 @@ Object-oriented finite state machine implementation using python
 
 ## Installation
 
+Download source code and run the following commands to install and uninstall the package:
+```console
+pip install .
+pip uninstall fsm_finite_state_machine
+```
+
 ## Usage
 There are 3 main classes in this package to be used:
 1. `State` - Contains the definition of the state machine state as a string key

@@ -1,5 +1,5 @@
 from enum import Enum, unique
-from fsm import State, Transition, FSM
+from fsm_finite_state_machine import State, Transition, FSM
 
 @unique
 class StateName(Enum):
