@@ -1,9 +1,30 @@
 # Definition of build process of the package.
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-ra -q"
+[project]
+name = "fsm_finite_state_machine"
+version = "0.1.0"
+description = "Finite State Machine"
+readme = "README.md"
+authors = [{ name = "André Rodrigues Almeida", email = "dralm3ida.dev@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["fsm_finite_state_machine", "setuptools"]
+dependencies = [
+]
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+
+[project.urls]
+repository = "https://github.com/dralm3ida/finite-state-machine"
+
+[project.scripts]
+example1 = "examples.example1:main"
